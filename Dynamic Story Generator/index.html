@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Story Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dynamic Story Generator</h1>
+    <form id="storyForm">
+        <label for="theme">Choose a Theme:</label>
+        <select id="theme">
+            <option value="adventure">Adventure</option>
+            <option value="mystery">Mystery</option>
+            <option value="fantasy">Fantasy</option>
+        </select>
+
+        <label for="setting">Choose a Setting:</label>
+        <select id="setting">
+            <option value="forest">Forest</option>
+            <option value="castle">Castle</option>
+            <option value="space">Space</option>
+        </select>
+
+        <label for="character">Choose a Character:</label>
+        <select id="character">
+            <option value="hero">Hero</option>
+            <option value="villain">Villain</option>
+            <option value="sidekick">Sidekick</option>
+        </select>
+
+        <button type="button" onclick="generateStory()">Generate Story</button>
+    </form>
+
+    <div id="storyOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
